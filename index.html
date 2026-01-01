@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Unbalanced Galaxy – Rules</title>
+
+<style>
+:root {
+  --bg: #0b0f1a;
+  --panel: #12182b;
+  --accent: #7c9cff;
+  --accent-soft: #1d2647;
+  --text: #ffffff;
+  --muted: #aab0d6;
+  --border: #2a3361;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at top, #11183a, var(--bg));
+  color: var(--text);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px;
+  background: linear-gradient(135deg, var(--panel), #0e1430);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 50px rgba(0,0,0,.45);
+}
+
+.header img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.header small {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.rules-title {
+  margin: 50px 0 20px;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.section-header {
+  cursor: pointer;
+  padding: 18px 22px;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--accent-soft), var(--panel));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header span {
+  color: var(--accent);
+}
+
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease;
+}
+
+.section.open .section-content {
+  max-height: 2000px;
+}
+
+.part {
+  padding: 18px 22px;
+  border-top: 1px solid var(--border);
+}
+
+.part h4 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.part p {
+  margin: 0;
+  color: #e6e8ff;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-note {
+  margin-top: 40px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <img src="pfp.png" alt="Server Icon">
+    <div>
+      <h1>THE UNBALANCED GALAXY DISCORD SERVER RULES</h1>
+      <small>Last Updated 12/31/2025, 8:42PM CST – 380 Members at the time</small>
+    </div>
+  </div>
+
+  <div class="rules-title">⚖️ Server Rules</div>
+
+  <!-- SECTION A -->
+  <div class="section">
+    <div class="section-header">Section A. General Conduct <span>+</span></div>
+    <div class="section-content">
+      <div class="part">
+        <h4>Part A. Respect Everyone</h4>
+        <p>All members must treat others with respect. Harassment, insults, threats, or intentionally causing drama are not tolerated.</p>
+      </div>
+      <div class="part">
+        <h4>Part B. No Hate or Discrimination</h4>
+        <p>Racism, sexism, homophobia, transphobia, or any form of hateful behavior is strictly prohibited regardless of intent.</p>
+      </div>
+      <div class="part">
+        <h4>Part C. Common Sense Rule</h4>
+        <p>If an action feels harmful, disruptive, or unsafe, assume it is not allowed even if not explicitly listed.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION B -->
+  <div class="section">
+    <div class="section-header">Section B. Discord Platform Rules <span>+</span></div>
+    <div class="section-content">
+      <div class="part">
+        <h4>Part A. Discord Terms of Service</h4>
+        <p>All Discord Terms of Service and Community Guidelines apply and are enforced within this server.</p>
+      </div>
+      <div class="part">
+        <h4>Part B. Illegal Content</h4>
+        <p>Any illegal activity, including piracy, exploits, or distribution of illegal material, is forbidden.</p>
+      </div>
+      <div class="part">
+        <h4>Part C. NSFW Restrictions</h4>
+        <p>NSFW content, sexual material, extreme violence, or gore is not allowed in any channel.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION C -->
+  <div class="section">
+    <div class="section-header">Section C. Channel Usage <span>+</span></div>
+    <div class="section-content">
+      <div class="part">
+        <h4>Part A. Usage of Channels</h4>
+        <p>Use channels only for their intended purpose. Off-topic discussion should be redirected appropriately.</p>
+      </div>
+      <div class="part">
+        <h4>Part B. Spam and Flooding</h4>
+        <p>Spam is only permitted in designated channels. Message flooding, copy-pasting, or mic spam is prohibited.</p>
+      </div>
+      <div class="part">
+        <h4>Part C. Bot and Game Channels</h4>
+        <p>Do not abuse bots, break counting games, or intentionally disrupt automated systems.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION D -->
+  <div class="section">
+    <div class="section-header">Section D. Promotion & Advertising <span>+</span></div>
+    <div class="section-content">
+      <div class="part">
+        <h4>Part A. Self-Promotion</h4>
+        <p>Advertising and self-promotion are not allowed unless explicitly approved or posted in the designated channel.</p>
+      </div>
+      <div class="part">
+        <h4>Part B. Server Invites</h4>
+        <p>Posting server invites without permission is prohibited, including indirect or disguised promotions.</p>
+      </div>
+      <div class="part">
+        <h4>Part C. External Links</h4>
+        <p>Links that are malicious, misleading, or unsafe will result in moderation action.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION E -->
+  <div class="section">
+    <div class="section-header">Section E. Profiles & Identity <span>+</span></div>
+    <div class="section-content">
+      <div class="part">
+        <h4>Part A. Usernames and Avatars</h4>
+        <p>Usernames, avatars, and bios must be appropriate and not impersonate other members or staff.</p>
+      </div>
+      <div class="part">
+        <h4>Part B. Impersonation</h4>
+        <p>Impersonating staff, bots, or other users is strictly forbidden.</p>
+      </div>
+      <div class="part">
+        <h4>Part C. Personal Information</h4>
+        <p>Do not share private or sensitive information about yourself or others.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION F -->
+  <div class="section">
+    <div class="section-header">Section F. Staff & Moderation <span>+</span></div>
+    <div class="section-content">
+      <div class="part">
+        <h4>Part A. Respect Staff</h4>
+        <p>Staff decisions must be respected. If you disagree, use tickets or appropriate support channels.</p>
+      </div>
+      <div class="part">
+        <h4>Part B. No Mini-Modding</h4>
+        <p>Do not act as staff or enforce rules yourself. Report issues instead.</p>
+      </div>
+      <div class="part">
+        <h4>Part C. Do Not Ask for Mod</h4>
+        <p>Staff roles are earned through trust and contribution, not requested.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION G -->
+  <div class="section">
+    <div class="section-header">Section G. Tickets, Events, and Voice <span>+</span></div>
+    <div class="section-content">
+      <div class="part">
+        <h4>Part A. Ticket Usage</h4>
+        <p>Tickets must be used for legitimate support, reports, or questions. Troll or ghost tickets are not allowed.</p>
+      </div>
+      <div class="part">
+        <h4>Part B. Voice Chat Conduct</h4>
+        <p>Voice chats follow the same rules as text channels. Be respectful and avoid disruptive behavior.</p>
+      </div>
+      <div class="part">
+        <h4>Part C. Events</h4>
+        <p>Follow all event instructions. Cheating or exploiting will result in removal or disqualification.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION H -->
+  <div class="section">
+    <div class="section-header">Section H. Enforcement & Alts <span>+</span></div>
+    <div class="section-content">
+      <div class="part">
+        <h4>Part A. No Ban Evasion</h4>
+        <p>Using alternate accounts to bypass punishments is strictly prohibited.</p>
+      </div>
+      <div class="part">
+        <h4>Part B. Punishments</h4>
+        <p>Rule violations may result in warnings, mutes, kicks, or bans depending on severity.</p>
+      </div>
+      <div class="part">
+        <h4>Part C. Final Authority</h4>
+        <p>Staff reserve the right to take action in situations not explicitly covered by these rules.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    These rules are a starter framework and will evolve as the server grows.
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll('.section-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const section = header.parentElement;
+    section.classList.toggle('open');
+  });
+});
+</script>
+
+</body>
+</html>
